@@ -52,3 +52,44 @@ awk '{ms=(($4+$3)/2); rs=ms/$2; if(rs >=0.5){print $2-ms}else{print ms}}' out.pa
 # Binning reads by number of TSO hits per read;
 cut -f out.paf | sort | uniq -c | awk '{print $1}' | sort | uniq -c
 ```
+
+# Running wf-single-cell
+
+```
+# We use the cellranger standard reference package
+refdir=/path/to/refdata-gex-GRCh38-2020-A
+OUTPUT=results
+nextflow run /path/to/wf-single-cell-1.0.3 \
+    -w ./work \
+    -profile singularity \
+    -c extra.conf \
+    --fastq /data/P29702_301.fastq.gz \
+    --kit_name 3prime \
+    --kit_version v3 \
+    --expected_cells 500 \
+    --ref_genome_dir $refdir \
+    --out_dir ${OUTPUT} \
+    --plot_umaps \
+    --merge_bam
+
+# Copy some tsv files the pipeline hides away in "tmp"
+cp work/tmp/*/*/*.tsv results/
+```
+
+extra.conf:
+```
+process {
+    withLabel:singlecell {
+        container = "$baseDir/container/wf-single-cell_sha8e7d91013029ea8721743bd087583e5205cdc1dc.sif"
+    }
+    withLabel:wf_common {
+                container = "$baseDir/container/wf-common_sha1c5febff9f75143710826498b093d9769a5edbb9.sif"
+        }
+    shell = ['/bin/bash', '-euo', 'pipefail']
+
+    executor = 'slurm'
+    time = '48.h'
+    cpus = 4
+    clusterOptions ='-A ngi2016004 -p node -n 6'
+}
+```
