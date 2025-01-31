@@ -1,6 +1,20 @@
 # NGI-ONT_scRNAseq-tech_note-2025
 
+This repository container supplementary information for the tech note "mRNA isoform detection by long-read sequencing of 10x single cell cDNA libraries" published by NGI in 2025.
+
 ## Supplementary figures
+
+* [Supplementary Figure S1](Supplementary Figure S1.docx)
+* [Supplementary Figure S2](Supplementary Figure S2.docx)
+
+## Supplementary tables
+
+* [Supplementary Table S1](Supplementary Table S1.docx)
+* [Supplementary Table S2](Supplementary Table S2.docx)
+
+## Supplementary methods
+
+* [Supplementary method FLT-seq](Supplementary method FLT-seq.docx)
 
 ## Plot source code
 
