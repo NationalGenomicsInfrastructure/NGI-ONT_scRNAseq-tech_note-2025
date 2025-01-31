@@ -4,17 +4,17 @@ This repository container supplementary information for the tech note "mRNA isof
 
 ## Supplementary figures
 
-* [Supplementary Figure S1](Supplementary Figure S1.docx)
-* [Supplementary Figure S2](Supplementary Figure S2.docx)
+* [Supplementary Figure S1](Supplementary%20Figure%20S1.docx)
+* [Supplementary Figure S2](Supplementary%20Figure%20S2.docx")
 
 ## Supplementary tables
 
-* [Supplementary Table S1](Supplementary Table S1.docx)
-* [Supplementary Table S2](Supplementary Table S2.docx)
+* [Supplementary Table S1](Supplementary%20Table%20S1.docx)
+* [Supplementary Table S2](Supplementary%20Table%20S2.docx)
 
 ## Supplementary methods
 
-* [Supplementary method FLT-seq](Supplementary method FLT-seq.docx)
+* [Supplementary method FLT-seq](Supplementary%20method%20FLT-seq.docx)
 
 ## Plot source code
 
