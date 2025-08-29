@@ -5,12 +5,14 @@ This repository container supplementary information for the tech note "mRNA isof
 ## Supplementary figures
 
 * [Supplementary Figure S1](Supplementary%20Figure%20S1.docx)
-* [Supplementary Figure S2](Supplementary%20Figure%20S2.docx")
+* [Supplementary Figure S2](Supplementary%20Figure%20S2.docx)
+* [Supplementary Figure S3](Supplementary%20Figure%20S3.docx)
 
 ## Supplementary tables
 
 * [Supplementary Table S1](Supplementary%20Table%20S1.docx)
 * [Supplementary Table S2](Supplementary%20Table%20S2.docx)
+* [Supplementary Table S3](Supplementary%20Table%20S3.docx)
 
 ## Supplementary methods
 
@@ -28,6 +30,14 @@ A few of the figures in the this tech note were generated in jupyter notebooks.
 
 
 ## Command-line scripts
+
+### isoform length by class code
+
+* [isofrom_length_class_code.py](isofrom_length_class_code.py)
+
+### extract isoforms by class
+
+* [extract_isoforms_by_class.sh](extract_isoforms_by_class.sh)
 
 ### wf-single-cell extra statistic
 
